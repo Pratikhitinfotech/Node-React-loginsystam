@@ -36,6 +36,14 @@ app.use(cors());
 
 app.use('/api/auth', authRouter)
 
+const cors = require('cors');
+// Allow all origins
+app.use(cors());
+// Allow specific origin(s)
+app.use(cors({
+    origin: 'https://node-react-loginsystam.vercel.app'
+}));
+
 app.listen(2024, () => {
     console.log('Server starte on port 2024');
 })
