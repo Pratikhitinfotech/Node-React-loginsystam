@@ -33,13 +33,10 @@ async function main() {
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors());
-app.use(cors({
-    origin: 'https://node-react-loginsystam.vercel.app'
-}));
 
 app.use('/api/auth', authRouter)
 
-
-app.listen(2024, () => {
+let  port = process.env.PORT || 8090;
+app.listen(port, () => {
     console.log('Server starte on port 2024');
 })
