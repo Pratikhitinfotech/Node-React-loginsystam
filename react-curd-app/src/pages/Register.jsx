@@ -44,7 +44,7 @@ const Register = () => {
     const handleSubmit = async (values, props) => {
         console.log(values);
         try {
-            const res = await axios.post("http://localhost:2024/api/auth/register", values);
+            const res = await axios.post("https://node-react-loginsystam.vercel.app/api/auth/register", values);
             naviget("/login")
             console.log("resss", res);
         } catch (err) {
