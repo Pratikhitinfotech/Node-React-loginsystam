@@ -41,7 +41,7 @@ const cors = require('cors');
 app.use(cors());
 // Allow specific origin(s)
 app.use(cors({
-    origin: 'https://node-react-loginsystam.vercel.app'
+    origin: 'https://node-react-loginsystam-27y5.vercel.app'
 }));
 
 app.listen(2024, () => {
