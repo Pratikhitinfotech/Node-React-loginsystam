@@ -32,7 +32,7 @@ async function main() {
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(cors());
+// app.use(cors());
 app.use(cors({
     origin: 'https://node-react-loginsystam-27y5.vercel.app'
 }));
